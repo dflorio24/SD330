@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <title> Fridge Assignment? </title>
+        <meta charset="UTF-8">
+        <style>
+            body{background-color:blanchedalmond;}
+            h1{text-align:center; font-family:georgia;}
+            h2{text-align:center; font-family:georgia; text-decoration:underline;}
+            div{border-width:5px; border:solid black; width:45%; margin-right:20px;}
+            p{font-family:georgia; font-weight:50px;}
+            .button{background-color: salmon; border:none; color:buttonStyle; padding: 15px 32px;
+            text-align:center; text-decoration: none; display: inline-block; color:blanchedalmond; font-size: 16px; margin-bottom:15px; border-radius:8px;}
+        </style>
+    </head>
+
+    <body onload="startTime()">
+        <h1> Excercise 6 </h1>
+
+        <div id="div3" style="background-image: url(https://toppng.com/uploads/preview/image-for-samsung-samsung-255-cu-ft-french-door-refrigerator-11563129592qjeqok2bma.png);
+        background-position: center; background-repeat: no-repeat; background-size: cover; height:700px; margin:auto;">
+
+            <div  id="div1" style="float:right; height:315px; width:100px; margin-right:130px; margin-top:70px; background-color:black;">
+                
+                <p id="temp" style="font-size:xx-large; text-align:center; color:aqua;"></p> 
+                <img src="https://static01.nyt.com/images/2015/10/01/t-magazine/01tmag-fridges-slide-Y1U5/01tmag-fridges-slide-Y1U5-articleLarge.jpg?quality=75&auto=webp&disable=upscale"
+            id="pic" width="100px" height="100px">
+            </div>
+
+            <div id="div2" style="background-color:black; height:315px; width:117px; margin-left:130px; margin-bottom:30px; margin-top:70px">
+                <a id="div1" class="button" onclick="openDoor()"> Open Fridge  </a>
+                <a id="div1" class="button" onclick="showTemp()"> Show Temp </a>
+                <a id="div1" class="button" onclick="showTemp()"> Netflix </a>
+                <a id="div1" class="button" onclick="showTemp()"> Browser </a>
+            </div>
+
+            <div id="div4" style="height:45px; width:150px; margin:auto; margin-top:170px; text-align:center; font-size:xx-large;">
+            </div>
+
+
+        </div>
+
+
+    </body>
+
+    <script>
+        function showTemp(){
+            var someText = document.getElementById("temp")
+            someText.textContent = "42"
+        }
+
+        var pic = document.getElementsById("pic");
+
+        function openDoor(){
+            document.getElementById("div1")
+            pic.source = "https://static01.nyt.com/images/2015/10/01/t-magazine/01tmag-fridges-slide-Y1U5/01tmag-fridges-slide-Y1U5-articleLarge.jpg?quality=75&auto=webp&disable=upscale"
+        }
+
+
+
+        function startTime(){
+            const today = new Date();
+            let h = today.getHours();
+            let m = today.getMinutes();
+            let s = today.getSeconds();
+            m = checkTime(m);
+            s = checkTime(s);
+            document.getElementById('div4').innerHTML = h + ":" + m + ":" + s;
+            setTimeout(startTime, 1000);
+        }
+
+        function checkTime(i) {
+            if (i < 10) {i = "0" + i}; 
+            return i;
+        }
+    </script>
+
+    <footer>
+        <hr> D. Florio - October, 15, 2023 
+    </footer>
+
+</html>
+
+
+
+
+
+
+let isPowerOn = false;
+
+        powerButton.addEventListener('click', () => {
+            if (isPowerOn) {
+                display.src = "https://images.tenorshare.com/topics/android/lg-tv-stuck-on-logo-screen.jpg?w=750&h=392";
+                powerButton.innerText = "Power On";
+                isPowerOn = false;
+            } else {
+                display.src = "https://images.tenorshare.com/topics/android/lg-tv-stuck-on-logo-screen.jpg?w=750&h=392";
+                powerButton.innerText = "Power Off";
+                isPowerOn = true;
+            }
+        });
+
