@@ -1,0 +1,205 @@
+{
+    "courses": {
+      "330": {
+        "title": "System Design",
+        "crn": "1234",
+        "credits": "4",
+        "instructor": "Marc Antony",
+        "classstyle": "In-Person",
+        "subject": "Computer Science"
+      },
+      "210": {
+        "title": "Marketing Communications",
+        "crn": "5678",
+        "credits": "3",
+        "instructor": "Tina Fey",
+        "classstyle": "Online",
+        "subject": "Business"
+      },
+      "300": {
+        "title": "Biology Class",
+        "crn": "8989",
+        "credits": "2",
+        "instructor": "Charlie Thomas",
+        "classstyle": "Online",
+        "subject": "Science"
+      },
+      "477": {
+        "title": "Business Capping Course",
+        "crn": "1989",
+        "credits": "4",
+        "instructor": "Mark Smith",
+        "classstyle": "In-Person",
+        "subject": "Business"
+      },
+      "550": {
+        "title": "Psychology Grad Course",
+        "crn": "5674",
+        "credits": "5",
+        "instructor": "Samantha Jones",
+        "classstyle": "In Person",
+        "subject": "Science"
+      },
+      "100": {
+        "title": "Writing For College",
+        "crn": "1211",
+        "credits": "4",
+        "instructor": "Maria Christine",
+        "classstyle": "In-Person",
+        "subject": "Communications"
+      },
+      "170": {
+        "title": "Intro to Drawing",
+        "crn": "2981",
+        "credits": "3",
+        "instructor": "Sean Green",
+        "classstyle": "In-Person",
+        "subject": "Fine Arts"
+      },
+      "320": {
+        "title": "Theology",
+        "crn": "4032",
+        "credits": "2",
+        "instructor": "Tammy downs",
+        "classstyle": "Online",
+        "subject": "Religious Studies"
+      },
+      "250": {
+        "title": "Ethics",
+        "crn": "0930",
+        "credits": "4",
+        "instructor": "Micheal Jones",
+        "classstyle": "In-Person",
+        "subject": "Philosophy"
+      }
+    },
+    "books": {
+      "interactiondesign": {
+        "title": "Interaction Design",
+        "author": "Helen SharpYvonne Rogers",
+        "publisher": "Wiley",
+        "length": "580",
+        "type": "E-Book"
+      },
+      "designprinciples": {
+        "title": "Design Principles",
+        "author": "Rodger Stein",
+        "publisher": "Penguin",
+        "length": "434",
+        "type": "Hardcover"
+      },
+      "marketingessentials": {
+        "title": "Marketing Essentials",
+        "author": "Tim Mgraw",
+        "publisher": "Cengage",
+        "length": "605",
+        "type": "E-Book"
+      },
+      "keystomarketing": {
+        "title": "Keys to Marketing ",
+        "author": "Dawn Levy",
+        "publisher": "McGraw Hill",
+        "length": "250",
+        "type": "Hardcover"
+      },
+      "differentlifeforms": {
+        "title": "Different Life Forms",
+        "author": "Tony Gonzalez",
+        "publisher": "Wiley",
+        "length": "721",
+        "type": "Hardcover"
+      },
+      "theworldaround": {
+        "title": "The World Around Us",
+        "author": "Geoff Graff",
+        "publisher": "Wiley ",
+        "length": "233",
+        "type": "Hardcover"
+      },
+      "finishline": {
+        "title": "Finish Line: Wrapping up Business Essentials",
+        "author": "Marcy Stevens",
+        "publisher": "McGraw Hill",
+        "length": "466",
+        "type": "E-Book"
+      },
+      "worldofbusiness": {
+        "title": "The World of Business out there",
+        "author": "Sean Kingston",
+        "publisher": "Penguin",
+        "length": "132",
+        "type": "Hardcover"
+      },
+      "intothemind": {
+        "title": "Into the Mind",
+        "author": "Mark Johson",
+        "publisher": "HarperCollins",
+        "length": "406",
+        "type": "E-Book"
+      },
+      "thepsychofpeople": {
+        "title": "The Psychology of People",
+        "author": "Lauren Hoffman",
+        "publisher": "Penguin",
+        "length": "547",
+        "type": "Hardcover"
+      },
+      "writing101": {
+        "title": "Writing 101",
+        "author": "Seth Myers",
+        "publisher": "HarperCollins",
+        "length": "240",
+        "type": "Hardcover"
+      },
+      "how2write": {
+        "title": "How to Write at a Higher Level",
+        "author": "Grace Seanstawn",
+        "publisher": "Penguin",
+        "length": "547",
+        "type": "Hardcover"
+      },
+      "shapesandcircles": {
+        "title": "Shapes and Circles",
+        "author": "Rain Livingston",
+        "publisher": "Pengiun",
+        "length": "460",
+        "type": "Hardcover"
+      },
+      "importanceofshading": {
+        "title": "Importance of Shading",
+        "author": "Marcus Peters",
+        "publisher": "Penguin",
+        "length": "279",
+        "type": "Hardcover"
+      },
+      "theBible": {
+        "title": "The Bible",
+        "author": "Various",
+        "publisher": "Penguin",
+        "length": "2000",
+        "type": "Hardcover"
+      },
+      "Theologylessons": {
+        "title": "Lessons in Theology",
+        "author": "John Peter",
+        "publisher": "Cengage",
+        "length": "443",
+        "type": "E-Book"
+      },
+      "trialsandtribulations": {
+        "title": "Trials and Tribulations",
+        "author": "Kante",
+        "publisher": "Penguin",
+        "length": "132",
+        "type": "Hardcover"
+      },
+      "TheLeviathan": {
+        "title": "The Leviathan",
+        "author": "Plato",
+        "publisher": "Penguin",
+        "length": "200",
+        "type": "Hardcover"
+      }
+    }
+  }
+  
