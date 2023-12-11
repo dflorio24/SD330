@@ -1,0 +1,49 @@
+<!-- courses.html -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Courses</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1>Fox Books</h1>
+        <h2>Courses</h2>
+        
+        <h3>Class List</h3>
+        
+        <div id="courses"></div>
+
+    </body>
+
+    <script type="module">
+        const fetchData = async () => {
+            try {
+                const response = await fetch('https://dflorio24.github.io/SD330/foxbooks.json');
+                const data = await response.json();
+                const jsonContent = document.getElementById('courses');
+                let coursesHtml = '';
+
+                data.courses.forEach(course => {
+                    coursesHtml += `<li>
+                            <h3><a href="textbooks.html?courseID=${course.courseID}">${course.title}</a></h3>
+                            <p><strong>Course ID:</strong> ${course.courseID}</p>
+                            <p><strong>Semester:</strong> ${course.semester}</p>
+                            <p><strong>Professor:</strong> ${course.professor}</p>
+                            <p><strong>Credits:</strong> ${course.credits}</p>
+                            <p><strong>Room Style:</strong> ${course.roomStyle}</p>
+                          </li>`;
+                });
+
+                jsonContent.innerHTML = coursesHtml;
+            } catch (error) {
+                console.error('Error fetching data:', error);
+            }
+        };
+
+        fetchData();
+
+    </script>
+
+</html>
