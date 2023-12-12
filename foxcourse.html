@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Foxbooks Course List</title>
+</head>
+<body>
+    <h1>Course List</h1>
+    <nav> 
+        <a href="foxbookmain.html"> Home </a>
+        <a href="foxbookerror.html"> About </a>
+        <a href="foxcourse.html"> Courses </a>
+    </nav>
+   
+    <table style="text-align:center; text-decoration:larger;">
+        <thead>
+            <tr>
+               <th> Title </th> 
+               <th> Instructor </th>
+               <th> CRN </th>
+            </tr>
+        </thead>
+        <tbody id="data-output">
+
+        </tbody>
+    </table>
+
+    </div>
+
+    <script>
+        fetch('https://dflorio24.github.io/SD330/foxbooks.json')
+        .then(function(response){
+            return response.json();
+        })
+        .then(function(courses){
+            let placeholder = document.querySelector("data-output");
+            let out = "";
+            for(let course of courses.coursesData){
+                out += `
+                    <tr>
+                        <td> ${course.title}</td>
+                        <td> ${course.instructor}</td>
+                        <td> ${course.crn}</td>
+                    </tr>
+                `;
+            }
+            placeholder.innerHTML = out;
+        })
+        
+    </script>
+</body>
+
+<footer>
+    <hr> D. Florio - 12/11/2023
+</footer>
+</html>
